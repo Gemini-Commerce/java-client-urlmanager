@@ -2,7 +2,8 @@
 
 Url Manager Service
 - API version: 1.0.0
-  - Build date: 2024-02-29T16:28:34.214643109Z[Etc/UTC]
+  - Build date: 2024-11-14T11:52:59.759578872Z[Etc/UTC]
+  - Generator version: 7.9.0
 
 The URL Manager service provides a set of APIs for managing URL rewrites within your application. URL rewriting is a technique used to modify the appearance or structure of URLs while maintaining the functionality and accessibility of the underlying resources.
 
@@ -48,7 +49,7 @@ Add this dependency to your project's POM:
 <dependency>
   <groupId>org.openapitools</groupId>
   <artifactId>openapi-java-client</artifactId>
-  <version>1.1.0</version>
+  <version>1.0.0</version>
   <scope>compile</scope>
 </dependency>
 ```
@@ -64,7 +65,7 @@ Add this dependency to your project's build file:
   }
 
   dependencies {
-     implementation "org.openapitools:openapi-java-client:1.1.0"
+     implementation "org.openapitools:openapi-java-client:1.0.0"
   }
 ```
 
@@ -78,7 +79,7 @@ mvn clean package
 
 Then manually install the following JARs:
 
-* `target/openapi-java-client-1.1.0.jar`
+* `target/openapi-java-client-1.0.0.jar`
 * `target/lib/*.jar`
 
 ## Getting Started
@@ -88,11 +89,11 @@ Please follow the [installation](#installation) instruction and execute the foll
 ```java
 
 // Import classes:
-import GeminiCommerce_Urlmanager.ApiClient;
-import GeminiCommerce_Urlmanager.ApiException;
-import GeminiCommerce_Urlmanager.Configuration;
-import GeminiCommerce_Urlmanager.auth.*;
-import GeminiCommerce_Urlmanager.models.*;
+import GeminiCommerce.Urlmanager.ApiClient;
+import GeminiCommerce.Urlmanager.ApiException;
+import GeminiCommerce.Urlmanager.Configuration;
+import GeminiCommerce.Urlmanager.auth.*;
+import org.openapitools.client.model.*;
 import org.openapitools.client.api.BasicOperationsApi;
 
 public class Example {
@@ -100,6 +101,12 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://urlmanager.api.gogemini.io");
     
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
+
     BasicOperationsApi apiInstance = new BasicOperationsApi(defaultClient);
     UrlmanagerChangeUrlRewriteRequestPathRequest body = new UrlmanagerChangeUrlRewriteRequestPathRequest(); // UrlmanagerChangeUrlRewriteRequestPathRequest | 
     try {
@@ -162,7 +169,22 @@ Class | Method | HTTP request | Description
 <a id="documentation-for-authorization"></a>
 ## Documentation for Authorization
 
-Endpoints do not require authorization.
+
+Authentication schemes defined for the API:
+<a id="Authorization"></a>
+### Authorization
+
+- **Type**: API key
+- **API key parameter name**: Authorization
+- **Location**: HTTP header
+
+<a id="standardAuthorization"></a>
+### standardAuthorization
+
+- **Type**: OAuth
+- **Flow**: implicit
+- **Authorization URL**: 
+- **Scopes**: N/A
 
 
 ## Recommendation

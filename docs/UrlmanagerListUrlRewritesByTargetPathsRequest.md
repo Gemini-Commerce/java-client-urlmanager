@@ -7,7 +7,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **tenantId**| **String** | Required.  | [optional]
-**targetPaths**| **List<String>** | Required.  | [optional]
+**targetPaths**| **List<String>** | Required.  | [optional] [default to new ArrayList<>()]
 **context**| **String** | Optional.  | [optional]
 **linkRel**| [**UrlRewriteLinkRel**](UrlRewriteLinkRel.md) |  for more information please, see Model/UrlRewriteLinkRel.php  | [optional] [default to UrlRewriteLinkRel.UNKNOWN]
 

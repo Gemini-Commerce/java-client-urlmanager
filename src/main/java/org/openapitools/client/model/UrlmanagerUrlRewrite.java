@@ -39,19 +39,18 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import GeminiCommerce_Urlmanager.JSON;
+import GeminiCommerce.Urlmanager.JSON;
 
 /**
  * UrlmanagerUrlRewrite
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-29T16:28:34.214643109Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-14T11:52:59.759578872Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class UrlmanagerUrlRewrite {
   public static final String SERIALIZED_NAME_TENANT_ID = "tenantId";
   @SerializedName(SERIALIZED_NAME_TENANT_ID)
@@ -89,10 +88,10 @@ public class UrlmanagerUrlRewrite {
     return this;
   }
 
-   /**
+  /**
    * Get tenantId
    * @return tenantId
-  **/
+   */
   @javax.annotation.Nullable
   public String getTenantId() {
     return tenantId;
@@ -108,10 +107,10 @@ public class UrlmanagerUrlRewrite {
     return this;
   }
 
-   /**
+  /**
    * Get id
    * @return id
-  **/
+   */
   @javax.annotation.Nullable
   public String getId() {
     return id;
@@ -127,10 +126,10 @@ public class UrlmanagerUrlRewrite {
     return this;
   }
 
-   /**
+  /**
    * Context field is part of the key. it&#39;s up to whoever is using the url manager to define it. e.g. locale or market or a concatenation of the two if needed.
    * @return context
-  **/
+   */
   @javax.annotation.Nullable
   public String getContext() {
     return context;
@@ -146,10 +145,10 @@ public class UrlmanagerUrlRewrite {
     return this;
   }
 
-   /**
+  /**
    * Get requestPath
    * @return requestPath
-  **/
+   */
   @javax.annotation.Nullable
   public String getRequestPath() {
     return requestPath;
@@ -165,10 +164,10 @@ public class UrlmanagerUrlRewrite {
     return this;
   }
 
-   /**
+  /**
    * Get targetPath
    * @return targetPath
-  **/
+   */
   @javax.annotation.Nullable
   public String getTargetPath() {
     return targetPath;
@@ -184,10 +183,10 @@ public class UrlmanagerUrlRewrite {
     return this;
   }
 
-   /**
+  /**
    * Get redirectType
    * @return redirectType
-  **/
+   */
   @javax.annotation.Nullable
   public UrlRewriteRedirectType getRedirectType() {
     return redirectType;
@@ -203,10 +202,10 @@ public class UrlmanagerUrlRewrite {
     return this;
   }
 
-   /**
+  /**
    * Get linkRel
    * @return linkRel
-  **/
+   */
   @javax.annotation.Nullable
   public UrlRewriteLinkRel getLinkRel() {
     return linkRel;
@@ -216,6 +215,50 @@ public class UrlmanagerUrlRewrite {
     this.linkRel = linkRel;
   }
 
+  /**
+   * A container for additional, undeclared properties.
+   * This is a holder for any undeclared properties as specified with
+   * the 'additionalProperties' keyword in the OAS document.
+   */
+  private Map<String, Object> additionalProperties;
+
+  /**
+   * Set the additional (undeclared) property with the specified name and value.
+   * If the property does not already exist, create it otherwise replace it.
+   *
+   * @param key name of the property
+   * @param value value of the property
+   * @return the UrlmanagerUrlRewrite instance itself
+   */
+  public UrlmanagerUrlRewrite putAdditionalProperty(String key, Object value) {
+    if (this.additionalProperties == null) {
+        this.additionalProperties = new HashMap<String, Object>();
+    }
+    this.additionalProperties.put(key, value);
+    return this;
+  }
+
+  /**
+   * Return the additional (undeclared) property.
+   *
+   * @return a map of objects
+   */
+  public Map<String, Object> getAdditionalProperties() {
+    return additionalProperties;
+  }
+
+  /**
+   * Return the additional (undeclared) property with the specified name.
+   *
+   * @param key name of the property
+   * @return an object
+   */
+  public Object getAdditionalProperty(String key) {
+    if (this.additionalProperties == null) {
+        return null;
+    }
+    return this.additionalProperties.get(key);
+  }
 
 
   @Override
@@ -233,12 +276,13 @@ public class UrlmanagerUrlRewrite {
         Objects.equals(this.requestPath, urlmanagerUrlRewrite.requestPath) &&
         Objects.equals(this.targetPath, urlmanagerUrlRewrite.targetPath) &&
         Objects.equals(this.redirectType, urlmanagerUrlRewrite.redirectType) &&
-        Objects.equals(this.linkRel, urlmanagerUrlRewrite.linkRel);
+        Objects.equals(this.linkRel, urlmanagerUrlRewrite.linkRel)&&
+        Objects.equals(this.additionalProperties, urlmanagerUrlRewrite.additionalProperties);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(tenantId, id, context, requestPath, targetPath, redirectType, linkRel);
+    return Objects.hash(tenantId, id, context, requestPath, targetPath, redirectType, linkRel, additionalProperties);
   }
 
   @Override
@@ -252,6 +296,7 @@ public class UrlmanagerUrlRewrite {
     sb.append("    targetPath: ").append(toIndentedString(targetPath)).append("\n");
     sb.append("    redirectType: ").append(toIndentedString(redirectType)).append("\n");
     sb.append("    linkRel: ").append(toIndentedString(linkRel)).append("\n");
+    sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -286,24 +331,16 @@ public class UrlmanagerUrlRewrite {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to UrlmanagerUrlRewrite
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to UrlmanagerUrlRewrite
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!UrlmanagerUrlRewrite.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
           throw new IllegalArgumentException(String.format("The required field(s) %s in UrlmanagerUrlRewrite is not found in the empty JSON string", UrlmanagerUrlRewrite.openapiRequiredFields.toString()));
-        }
-      }
-
-      Set<Map.Entry<String, JsonElement>> entries = jsonElement.getAsJsonObject().entrySet();
-      // check to see if the JSON string contains additional fields
-      for (Map.Entry<String, JsonElement> entry : entries) {
-        if (!UrlmanagerUrlRewrite.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `UrlmanagerUrlRewrite` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
@@ -347,6 +384,28 @@ public class UrlmanagerUrlRewrite {
            @Override
            public void write(JsonWriter out, UrlmanagerUrlRewrite value) throws IOException {
              JsonObject obj = thisAdapter.toJsonTree(value).getAsJsonObject();
+             obj.remove("additionalProperties");
+             // serialize additional properties
+             if (value.getAdditionalProperties() != null) {
+               for (Map.Entry<String, Object> entry : value.getAdditionalProperties().entrySet()) {
+                 if (entry.getValue() instanceof String)
+                   obj.addProperty(entry.getKey(), (String) entry.getValue());
+                 else if (entry.getValue() instanceof Number)
+                   obj.addProperty(entry.getKey(), (Number) entry.getValue());
+                 else if (entry.getValue() instanceof Boolean)
+                   obj.addProperty(entry.getKey(), (Boolean) entry.getValue());
+                 else if (entry.getValue() instanceof Character)
+                   obj.addProperty(entry.getKey(), (Character) entry.getValue());
+                 else {
+                   JsonElement jsonElement = gson.toJsonTree(entry.getValue());
+                   if (jsonElement.isJsonArray()) {
+                     obj.add(entry.getKey(), jsonElement.getAsJsonArray());
+                   } else {
+                     obj.add(entry.getKey(), jsonElement.getAsJsonObject());
+                   }
+                 }
+               }
+             }
              elementAdapter.write(out, obj);
            }
 
@@ -354,29 +413,50 @@ public class UrlmanagerUrlRewrite {
            public UrlmanagerUrlRewrite read(JsonReader in) throws IOException {
              JsonElement jsonElement = elementAdapter.read(in);
              validateJsonElement(jsonElement);
-             return thisAdapter.fromJsonTree(jsonElement);
+             JsonObject jsonObj = jsonElement.getAsJsonObject();
+             // store additional fields in the deserialized instance
+             UrlmanagerUrlRewrite instance = thisAdapter.fromJsonTree(jsonObj);
+             for (Map.Entry<String, JsonElement> entry : jsonObj.entrySet()) {
+               if (!openapiFields.contains(entry.getKey())) {
+                 if (entry.getValue().isJsonPrimitive()) { // primitive type
+                   if (entry.getValue().getAsJsonPrimitive().isString())
+                     instance.putAdditionalProperty(entry.getKey(), entry.getValue().getAsString());
+                   else if (entry.getValue().getAsJsonPrimitive().isNumber())
+                     instance.putAdditionalProperty(entry.getKey(), entry.getValue().getAsNumber());
+                   else if (entry.getValue().getAsJsonPrimitive().isBoolean())
+                     instance.putAdditionalProperty(entry.getKey(), entry.getValue().getAsBoolean());
+                   else
+                     throw new IllegalArgumentException(String.format("The field `%s` has unknown primitive type. Value: %s", entry.getKey(), entry.getValue().toString()));
+                 } else if (entry.getValue().isJsonArray()) {
+                     instance.putAdditionalProperty(entry.getKey(), gson.fromJson(entry.getValue(), List.class));
+                 } else { // JSON object
+                     instance.putAdditionalProperty(entry.getKey(), gson.fromJson(entry.getValue(), HashMap.class));
+                 }
+               }
+             }
+             return instance;
            }
 
        }.nullSafe();
     }
   }
 
- /**
-  * Create an instance of UrlmanagerUrlRewrite given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of UrlmanagerUrlRewrite
-  * @throws IOException if the JSON string is invalid with respect to UrlmanagerUrlRewrite
-  */
+  /**
+   * Create an instance of UrlmanagerUrlRewrite given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of UrlmanagerUrlRewrite
+   * @throws IOException if the JSON string is invalid with respect to UrlmanagerUrlRewrite
+   */
   public static UrlmanagerUrlRewrite fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, UrlmanagerUrlRewrite.class);
   }
 
- /**
-  * Convert an instance of UrlmanagerUrlRewrite to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of UrlmanagerUrlRewrite to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

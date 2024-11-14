@@ -20,6 +20,8 @@ info:
   version: 1.0.0
 servers:
 - url: https://urlmanager.api.gogemini.io/
+security:
+- Authorization: []
 tags:
 - description: Url Manager Description
   externalDocs:
@@ -62,14 +64,13 @@ paths:
               schema:
                 $ref: '#/components/schemas/rpcStatus'
           description: An unexpected error response.
-      security:
-      - standardAuthorization: []
       summary: Change Url Rewrite Request Path
       tags:
       - Basic Operations
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /urlmanager.UrlManager/CreateUrlRewrite:
     post:
       description: Create a new URL rewrite configuration with customizable rules.
@@ -106,14 +107,13 @@ paths:
               schema:
                 $ref: '#/components/schemas/rpcStatus'
           description: An unexpected error response.
-      security:
-      - standardAuthorization: []
       summary: Create Url Rewrite
       tags:
       - Basic Operations
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /urlmanager.UrlManager/DeleteUrlRewrite:
     post:
       description: Delete an existing URL rewrite configuration.
@@ -150,14 +150,13 @@ paths:
               schema:
                 $ref: '#/components/schemas/rpcStatus'
           description: An unexpected error response.
-      security:
-      - standardAuthorization: []
       summary: Delete Url Rewrite
       tags:
       - Basic Operations
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /urlmanager.UrlManager/GetUrlRewrite:
     post:
       description: Retrieve the details of a specific URL rewrite configuration.
@@ -194,14 +193,13 @@ paths:
               schema:
                 $ref: '#/components/schemas/rpcStatus'
           description: An unexpected error response.
-      security:
-      - standardAuthorization: []
       summary: Get Url Rewrite
       tags:
       - Basic Operations
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /urlmanager.UrlManager/ListUrlRewrites:
     post:
       description: Retrieve a list of all URL rewrite configurations in your application.
@@ -238,14 +236,13 @@ paths:
               schema:
                 $ref: '#/components/schemas/rpcStatus'
           description: An unexpected error response.
-      security:
-      - standardAuthorization: []
       summary: List Url Rewrites
       tags:
       - Basic Operations
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /urlmanager.UrlManager/ListUrlRewritesByTargetPaths:
     post:
       description: Retrieve URL rewrite configurations based on target paths.
@@ -261,7 +258,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/urlmanagerListUrlRewritesByTargetPathsRequest '
+                $ref: '#/components/schemas/urlmanagerListUrlRewritesByTargetPathsRequest'
           description: OK
         "401":
           content:
@@ -282,14 +279,13 @@ paths:
               schema:
                 $ref: '#/components/schemas/rpcStatus'
           description: An unexpected error response.
-      security:
-      - standardAuthorization: []
       summary: List Url Rewrites By Target Paths
       tags:
       - Basic Operations
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /urlmanager.UrlManager/ResolveUrlRewrite:
     post:
       description: Resolve and retrieve the rewritten URL for a given input URL.
@@ -326,14 +322,13 @@ paths:
               schema:
                 $ref: '#/components/schemas/rpcStatus'
           description: An unexpected error response.
-      security:
-      - standardAuthorization: []
       summary: Resolve Url Rewrite
       tags:
       - Basic Operations
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /urlmanager/change_url_rewrite_request_path:
     post:
       description: Modify the request path of a specific URL rewrite configuration.
@@ -370,14 +365,13 @@ paths:
               schema:
                 $ref: '#/components/schemas/rpcStatus'
           description: An unexpected error response.
-      security:
-      - standardAuthorization: []
       summary: Change Url Rewrite Request Path
       tags:
       - Basic Operations
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /urlmanager/create_url_rewrite:
     post:
       description: Create a new URL rewrite configuration with customizable rules.
@@ -414,14 +408,13 @@ paths:
               schema:
                 $ref: '#/components/schemas/rpcStatus'
           description: An unexpected error response.
-      security:
-      - standardAuthorization: []
       summary: Create Url Rewrite
       tags:
       - Basic Operations
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /urlmanager/delete_url_rewrite:
     post:
       description: Delete an existing URL rewrite configuration.
@@ -458,14 +451,13 @@ paths:
               schema:
                 $ref: '#/components/schemas/rpcStatus'
           description: An unexpected error response.
-      security:
-      - standardAuthorization: []
       summary: Delete Url Rewrite
       tags:
       - Basic Operations
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /urlmanager/get_url_rewrite:
     post:
       description: Retrieve the details of a specific URL rewrite configuration.
@@ -502,14 +494,13 @@ paths:
               schema:
                 $ref: '#/components/schemas/rpcStatus'
           description: An unexpected error response.
-      security:
-      - standardAuthorization: []
       summary: Get Url Rewrite
       tags:
       - Basic Operations
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /urlmanager/list_url_rewrites:
     post:
       description: Retrieve a list of all URL rewrite configurations in your application.
@@ -546,14 +537,13 @@ paths:
               schema:
                 $ref: '#/components/schemas/rpcStatus'
           description: An unexpected error response.
-      security:
-      - standardAuthorization: []
       summary: List Url Rewrites
       tags:
       - Basic Operations
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /urlmanager/list_url_rewrites_by_target_paths:
     post:
       description: Retrieve URL rewrite configurations based on target paths.
@@ -569,7 +559,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/urlmanagerListUrlRewritesByTargetPathsRequest '
+                $ref: '#/components/schemas/urlmanagerListUrlRewritesByTargetPathsRequest'
           description: OK
         "401":
           content:
@@ -590,14 +580,13 @@ paths:
               schema:
                 $ref: '#/components/schemas/rpcStatus'
           description: An unexpected error response.
-      security:
-      - standardAuthorization: []
       summary: List Url Rewrites By Target Paths
       tags:
       - Basic Operations
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /urlmanager/resolve_url_rewrite:
     post:
       description: Resolve and retrieve the rewritten URL for a given input URL.
@@ -634,14 +623,13 @@ paths:
               schema:
                 $ref: '#/components/schemas/rpcStatus'
           description: An unexpected error response.
-      security:
-      - standardAuthorization: []
       summary: Resolve Url Rewrite
       tags:
       - Basic Operations
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
 components:
   schemas:
     GetUrlRewriteRequestCompoundIdentifier:
@@ -681,11 +669,19 @@ components:
     protobufAny:
       additionalProperties:
         type: object
+      example:
+        '@type': '@type'
       properties:
         '@type':
           type: string
       type: object
     rpcStatus:
+      example:
+        code: 0
+        details:
+        - '@type': '@type'
+        - '@type': '@type'
+        message: message
       properties:
         code:
           format: int32
@@ -755,6 +751,13 @@ components:
           $ref: '#/components/schemas/GetUrlRewriteRequestCompoundIdentifier'
       type: object
     urlmanagerListUrlRewritesByTargetPathsRequest:
+      example:
+        linkRel: LinkRel_UNKNOWN
+        tenantId: tenantId
+        context: context
+        targetPaths:
+        - targetPaths
+        - targetPaths
       properties:
         tenantId:
           description: Required.
@@ -805,19 +808,19 @@ components:
     urlmanagerListUrlRewritesResponse:
       example:
         urlRewrites:
-        - linkRel: null
+        - linkRel: LinkRel_UNKNOWN
           tenantId: tenantId
           context: context
           targetPath: targetPath
           id: id
-          redirectType: null
+          redirectType: RedirectType_UNKNOWN
           requestPath: requestPath
-        - linkRel: null
+        - linkRel: LinkRel_UNKNOWN
           tenantId: tenantId
           context: context
           targetPath: targetPath
           id: id
-          redirectType: null
+          redirectType: RedirectType_UNKNOWN
           requestPath: requestPath
         nextPageToken: nextPageToken
       properties:
@@ -845,12 +848,12 @@ components:
       type: object
     urlmanagerUrlRewrite:
       example:
-        linkRel: null
+        linkRel: LinkRel_UNKNOWN
         tenantId: tenantId
         context: context
         targetPath: targetPath
         id: id
-        redirectType: null
+        redirectType: RedirectType_UNKNOWN
         requestPath: requestPath
       properties:
         tenantId:
@@ -873,8 +876,14 @@ components:
           $ref: '#/components/schemas/UrlRewriteLinkRel'
       type: object
   securitySchemes:
+    Authorization:
+      in: header
+      name: Authorization
+      type: apiKey
     standardAuthorization:
-      flows: {}
+      flows:
+        implicit:
+          scopes: {}
       type: oauth2
 x-original-swagger-version: "2.0"
 

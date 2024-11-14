@@ -31,11 +31,11 @@ Modify the request path of a specific URL rewrite configuration.
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Urlmanager.ApiClient;
-import GeminiCommerce_Urlmanager.ApiException;
-import GeminiCommerce_Urlmanager.Configuration;
-import GeminiCommerce_Urlmanager.auth.*;
-import GeminiCommerce_Urlmanager.models.*;
+import GeminiCommerce.Urlmanager.ApiClient;
+import GeminiCommerce.Urlmanager.ApiException;
+import GeminiCommerce.Urlmanager.Configuration;
+import GeminiCommerce.Urlmanager.auth.*;
+import GeminiCommerce.Urlmanager.models.*;
 import org.openapitools.client.api.BasicOperationsApi;
 
 public class Example {
@@ -43,6 +43,12 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://urlmanager.api.gogemini.io");
     
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
+
     BasicOperationsApi apiInstance = new BasicOperationsApi(defaultClient);
     UrlmanagerChangeUrlRewriteRequestPathRequest body = new UrlmanagerChangeUrlRewriteRequestPathRequest(); // UrlmanagerChangeUrlRewriteRequestPathRequest | 
     try {
@@ -71,7 +77,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -97,11 +103,11 @@ Modify the request path of a specific URL rewrite configuration.
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Urlmanager.ApiClient;
-import GeminiCommerce_Urlmanager.ApiException;
-import GeminiCommerce_Urlmanager.Configuration;
-import GeminiCommerce_Urlmanager.auth.*;
-import GeminiCommerce_Urlmanager.models.*;
+import GeminiCommerce.Urlmanager.ApiClient;
+import GeminiCommerce.Urlmanager.ApiException;
+import GeminiCommerce.Urlmanager.Configuration;
+import GeminiCommerce.Urlmanager.auth.*;
+import GeminiCommerce.Urlmanager.models.*;
 import org.openapitools.client.api.BasicOperationsApi;
 
 public class Example {
@@ -109,6 +115,12 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://urlmanager.api.gogemini.io");
     
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
+
     BasicOperationsApi apiInstance = new BasicOperationsApi(defaultClient);
     UrlmanagerChangeUrlRewriteRequestPathRequest body = new UrlmanagerChangeUrlRewriteRequestPathRequest(); // UrlmanagerChangeUrlRewriteRequestPathRequest | 
     try {
@@ -137,7 +149,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -163,11 +175,11 @@ Create a new URL rewrite configuration with customizable rules.
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Urlmanager.ApiClient;
-import GeminiCommerce_Urlmanager.ApiException;
-import GeminiCommerce_Urlmanager.Configuration;
-import GeminiCommerce_Urlmanager.auth.*;
-import GeminiCommerce_Urlmanager.models.*;
+import GeminiCommerce.Urlmanager.ApiClient;
+import GeminiCommerce.Urlmanager.ApiException;
+import GeminiCommerce.Urlmanager.Configuration;
+import GeminiCommerce.Urlmanager.auth.*;
+import GeminiCommerce.Urlmanager.models.*;
 import org.openapitools.client.api.BasicOperationsApi;
 
 public class Example {
@@ -175,6 +187,12 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://urlmanager.api.gogemini.io");
     
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
+
     BasicOperationsApi apiInstance = new BasicOperationsApi(defaultClient);
     UrlmanagerCreateUrlRewriteRequest body = new UrlmanagerCreateUrlRewriteRequest(); // UrlmanagerCreateUrlRewriteRequest | 
     try {
@@ -203,7 +221,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -229,11 +247,11 @@ Create a new URL rewrite configuration with customizable rules.
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Urlmanager.ApiClient;
-import GeminiCommerce_Urlmanager.ApiException;
-import GeminiCommerce_Urlmanager.Configuration;
-import GeminiCommerce_Urlmanager.auth.*;
-import GeminiCommerce_Urlmanager.models.*;
+import GeminiCommerce.Urlmanager.ApiClient;
+import GeminiCommerce.Urlmanager.ApiException;
+import GeminiCommerce.Urlmanager.Configuration;
+import GeminiCommerce.Urlmanager.auth.*;
+import GeminiCommerce.Urlmanager.models.*;
 import org.openapitools.client.api.BasicOperationsApi;
 
 public class Example {
@@ -241,6 +259,12 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://urlmanager.api.gogemini.io");
     
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
+
     BasicOperationsApi apiInstance = new BasicOperationsApi(defaultClient);
     UrlmanagerCreateUrlRewriteRequest body = new UrlmanagerCreateUrlRewriteRequest(); // UrlmanagerCreateUrlRewriteRequest | 
     try {
@@ -269,7 +293,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -295,11 +319,11 @@ Delete an existing URL rewrite configuration.
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Urlmanager.ApiClient;
-import GeminiCommerce_Urlmanager.ApiException;
-import GeminiCommerce_Urlmanager.Configuration;
-import GeminiCommerce_Urlmanager.auth.*;
-import GeminiCommerce_Urlmanager.models.*;
+import GeminiCommerce.Urlmanager.ApiClient;
+import GeminiCommerce.Urlmanager.ApiException;
+import GeminiCommerce.Urlmanager.Configuration;
+import GeminiCommerce.Urlmanager.auth.*;
+import GeminiCommerce.Urlmanager.models.*;
 import org.openapitools.client.api.BasicOperationsApi;
 
 public class Example {
@@ -307,6 +331,12 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://urlmanager.api.gogemini.io");
     
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
+
     BasicOperationsApi apiInstance = new BasicOperationsApi(defaultClient);
     UrlmanagerDeleteUrlRewriteRequest body = new UrlmanagerDeleteUrlRewriteRequest(); // UrlmanagerDeleteUrlRewriteRequest | 
     try {
@@ -335,7 +365,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -361,11 +391,11 @@ Delete an existing URL rewrite configuration.
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Urlmanager.ApiClient;
-import GeminiCommerce_Urlmanager.ApiException;
-import GeminiCommerce_Urlmanager.Configuration;
-import GeminiCommerce_Urlmanager.auth.*;
-import GeminiCommerce_Urlmanager.models.*;
+import GeminiCommerce.Urlmanager.ApiClient;
+import GeminiCommerce.Urlmanager.ApiException;
+import GeminiCommerce.Urlmanager.Configuration;
+import GeminiCommerce.Urlmanager.auth.*;
+import GeminiCommerce.Urlmanager.models.*;
 import org.openapitools.client.api.BasicOperationsApi;
 
 public class Example {
@@ -373,6 +403,12 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://urlmanager.api.gogemini.io");
     
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
+
     BasicOperationsApi apiInstance = new BasicOperationsApi(defaultClient);
     UrlmanagerDeleteUrlRewriteRequest body = new UrlmanagerDeleteUrlRewriteRequest(); // UrlmanagerDeleteUrlRewriteRequest | 
     try {
@@ -401,7 +437,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -427,11 +463,11 @@ Retrieve the details of a specific URL rewrite configuration.
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Urlmanager.ApiClient;
-import GeminiCommerce_Urlmanager.ApiException;
-import GeminiCommerce_Urlmanager.Configuration;
-import GeminiCommerce_Urlmanager.auth.*;
-import GeminiCommerce_Urlmanager.models.*;
+import GeminiCommerce.Urlmanager.ApiClient;
+import GeminiCommerce.Urlmanager.ApiException;
+import GeminiCommerce.Urlmanager.Configuration;
+import GeminiCommerce.Urlmanager.auth.*;
+import GeminiCommerce.Urlmanager.models.*;
 import org.openapitools.client.api.BasicOperationsApi;
 
 public class Example {
@@ -439,6 +475,12 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://urlmanager.api.gogemini.io");
     
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
+
     BasicOperationsApi apiInstance = new BasicOperationsApi(defaultClient);
     UrlmanagerGetUrlRewriteRequest body = new UrlmanagerGetUrlRewriteRequest(); // UrlmanagerGetUrlRewriteRequest | 
     try {
@@ -467,7 +509,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -493,11 +535,11 @@ Retrieve the details of a specific URL rewrite configuration.
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Urlmanager.ApiClient;
-import GeminiCommerce_Urlmanager.ApiException;
-import GeminiCommerce_Urlmanager.Configuration;
-import GeminiCommerce_Urlmanager.auth.*;
-import GeminiCommerce_Urlmanager.models.*;
+import GeminiCommerce.Urlmanager.ApiClient;
+import GeminiCommerce.Urlmanager.ApiException;
+import GeminiCommerce.Urlmanager.Configuration;
+import GeminiCommerce.Urlmanager.auth.*;
+import GeminiCommerce.Urlmanager.models.*;
 import org.openapitools.client.api.BasicOperationsApi;
 
 public class Example {
@@ -505,6 +547,12 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://urlmanager.api.gogemini.io");
     
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
+
     BasicOperationsApi apiInstance = new BasicOperationsApi(defaultClient);
     UrlmanagerGetUrlRewriteRequest body = new UrlmanagerGetUrlRewriteRequest(); // UrlmanagerGetUrlRewriteRequest | 
     try {
@@ -533,7 +581,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -559,11 +607,11 @@ Retrieve a list of all URL rewrite configurations in your application.
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Urlmanager.ApiClient;
-import GeminiCommerce_Urlmanager.ApiException;
-import GeminiCommerce_Urlmanager.Configuration;
-import GeminiCommerce_Urlmanager.auth.*;
-import GeminiCommerce_Urlmanager.models.*;
+import GeminiCommerce.Urlmanager.ApiClient;
+import GeminiCommerce.Urlmanager.ApiException;
+import GeminiCommerce.Urlmanager.Configuration;
+import GeminiCommerce.Urlmanager.auth.*;
+import GeminiCommerce.Urlmanager.models.*;
 import org.openapitools.client.api.BasicOperationsApi;
 
 public class Example {
@@ -571,6 +619,12 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://urlmanager.api.gogemini.io");
     
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
+
     BasicOperationsApi apiInstance = new BasicOperationsApi(defaultClient);
     UrlmanagerListUrlRewritesRequest body = new UrlmanagerListUrlRewritesRequest(); // UrlmanagerListUrlRewritesRequest | 
     try {
@@ -599,7 +653,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -625,11 +679,11 @@ Retrieve a list of all URL rewrite configurations in your application.
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Urlmanager.ApiClient;
-import GeminiCommerce_Urlmanager.ApiException;
-import GeminiCommerce_Urlmanager.Configuration;
-import GeminiCommerce_Urlmanager.auth.*;
-import GeminiCommerce_Urlmanager.models.*;
+import GeminiCommerce.Urlmanager.ApiClient;
+import GeminiCommerce.Urlmanager.ApiException;
+import GeminiCommerce.Urlmanager.Configuration;
+import GeminiCommerce.Urlmanager.auth.*;
+import GeminiCommerce.Urlmanager.models.*;
 import org.openapitools.client.api.BasicOperationsApi;
 
 public class Example {
@@ -637,6 +691,12 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://urlmanager.api.gogemini.io");
     
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
+
     BasicOperationsApi apiInstance = new BasicOperationsApi(defaultClient);
     UrlmanagerListUrlRewritesRequest body = new UrlmanagerListUrlRewritesRequest(); // UrlmanagerListUrlRewritesRequest | 
     try {
@@ -665,7 +725,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -691,11 +751,11 @@ Retrieve URL rewrite configurations based on target paths.
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Urlmanager.ApiClient;
-import GeminiCommerce_Urlmanager.ApiException;
-import GeminiCommerce_Urlmanager.Configuration;
-import GeminiCommerce_Urlmanager.auth.*;
-import GeminiCommerce_Urlmanager.models.*;
+import GeminiCommerce.Urlmanager.ApiClient;
+import GeminiCommerce.Urlmanager.ApiException;
+import GeminiCommerce.Urlmanager.Configuration;
+import GeminiCommerce.Urlmanager.auth.*;
+import GeminiCommerce.Urlmanager.models.*;
 import org.openapitools.client.api.BasicOperationsApi;
 
 public class Example {
@@ -703,6 +763,12 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://urlmanager.api.gogemini.io");
     
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
+
     BasicOperationsApi apiInstance = new BasicOperationsApi(defaultClient);
     UrlmanagerListUrlRewritesByTargetPathsRequest body = new UrlmanagerListUrlRewritesByTargetPathsRequest(); // UrlmanagerListUrlRewritesByTargetPathsRequest | 
     try {
@@ -731,7 +797,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -757,11 +823,11 @@ Retrieve URL rewrite configurations based on target paths.
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Urlmanager.ApiClient;
-import GeminiCommerce_Urlmanager.ApiException;
-import GeminiCommerce_Urlmanager.Configuration;
-import GeminiCommerce_Urlmanager.auth.*;
-import GeminiCommerce_Urlmanager.models.*;
+import GeminiCommerce.Urlmanager.ApiClient;
+import GeminiCommerce.Urlmanager.ApiException;
+import GeminiCommerce.Urlmanager.Configuration;
+import GeminiCommerce.Urlmanager.auth.*;
+import GeminiCommerce.Urlmanager.models.*;
 import org.openapitools.client.api.BasicOperationsApi;
 
 public class Example {
@@ -769,6 +835,12 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://urlmanager.api.gogemini.io");
     
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
+
     BasicOperationsApi apiInstance = new BasicOperationsApi(defaultClient);
     UrlmanagerListUrlRewritesByTargetPathsRequest body = new UrlmanagerListUrlRewritesByTargetPathsRequest(); // UrlmanagerListUrlRewritesByTargetPathsRequest | 
     try {
@@ -797,7 +869,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -823,11 +895,11 @@ Resolve and retrieve the rewritten URL for a given input URL.
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Urlmanager.ApiClient;
-import GeminiCommerce_Urlmanager.ApiException;
-import GeminiCommerce_Urlmanager.Configuration;
-import GeminiCommerce_Urlmanager.auth.*;
-import GeminiCommerce_Urlmanager.models.*;
+import GeminiCommerce.Urlmanager.ApiClient;
+import GeminiCommerce.Urlmanager.ApiException;
+import GeminiCommerce.Urlmanager.Configuration;
+import GeminiCommerce.Urlmanager.auth.*;
+import GeminiCommerce.Urlmanager.models.*;
 import org.openapitools.client.api.BasicOperationsApi;
 
 public class Example {
@@ -835,6 +907,12 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://urlmanager.api.gogemini.io");
     
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
+
     BasicOperationsApi apiInstance = new BasicOperationsApi(defaultClient);
     UrlmanagerResolveUrlRewriteRequest body = new UrlmanagerResolveUrlRewriteRequest(); // UrlmanagerResolveUrlRewriteRequest | 
     try {
@@ -863,7 +941,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -889,11 +967,11 @@ Resolve and retrieve the rewritten URL for a given input URL.
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Urlmanager.ApiClient;
-import GeminiCommerce_Urlmanager.ApiException;
-import GeminiCommerce_Urlmanager.Configuration;
-import GeminiCommerce_Urlmanager.auth.*;
-import GeminiCommerce_Urlmanager.models.*;
+import GeminiCommerce.Urlmanager.ApiClient;
+import GeminiCommerce.Urlmanager.ApiException;
+import GeminiCommerce.Urlmanager.Configuration;
+import GeminiCommerce.Urlmanager.auth.*;
+import GeminiCommerce.Urlmanager.models.*;
 import org.openapitools.client.api.BasicOperationsApi;
 
 public class Example {
@@ -901,6 +979,12 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://urlmanager.api.gogemini.io");
     
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
+
     BasicOperationsApi apiInstance = new BasicOperationsApi(defaultClient);
     UrlmanagerResolveUrlRewriteRequest body = new UrlmanagerResolveUrlRewriteRequest(); // UrlmanagerResolveUrlRewriteRequest | 
     try {
@@ -929,7 +1013,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
