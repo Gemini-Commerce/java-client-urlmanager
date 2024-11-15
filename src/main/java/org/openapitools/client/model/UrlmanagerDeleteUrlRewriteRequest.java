@@ -48,7 +48,7 @@ import GeminiCommerce.Urlmanager.JSON;
 /**
  * UrlmanagerDeleteUrlRewriteRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-15T15:33:58.567406864Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-15T16:35:35.971479917Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class UrlmanagerDeleteUrlRewriteRequest {
   public static final String SERIALIZED_NAME_TENANT_ID = "tenantId";
   @SerializedName(SERIALIZED_NAME_TENANT_ID)
