@@ -51,7 +51,7 @@ import GeminiCommerce.Urlmanager.JSON;
 /**
  * UrlmanagerListUrlRewritesResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-14T11:52:59.759578872Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-15T15:33:58.567406864Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class UrlmanagerListUrlRewritesResponse {
   public static final String SERIALIZED_NAME_URL_REWRITES = "urlRewrites";
   @SerializedName(SERIALIZED_NAME_URL_REWRITES)

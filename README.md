@@ -2,7 +2,7 @@
 
 Url Manager Service
 - API version: 1.0.0
-  - Build date: 2024-11-14T11:52:59.759578872Z[Etc/UTC]
+  - Build date: 2024-11-15T15:33:58.567406864Z[Etc/UTC]
   - Generator version: 7.9.0
 
 The URL Manager service provides a set of APIs for managing URL rewrites within your application. URL rewriting is a technique used to modify the appearance or structure of URLs while maintaining the functionality and accessibility of the underlying resources.
