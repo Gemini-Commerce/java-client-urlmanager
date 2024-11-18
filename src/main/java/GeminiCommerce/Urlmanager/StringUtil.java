@@ -16,7 +16,7 @@ package GeminiCommerce.Urlmanager;
 import java.util.Collection;
 import java.util.Iterator;
 
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-15T16:35:35.971479917Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-18T16:45:09.045546625Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class StringUtil {
   /**
    * Check if the given array contains the given value (with case-insensitive comparison).
